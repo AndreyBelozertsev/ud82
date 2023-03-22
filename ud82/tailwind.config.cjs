@@ -16,7 +16,14 @@ module.exports = {
         DEFAULT: '20px'
       },
     },
-    extend: {},
+    extend: {
+      colors: {
+        springtimeRain: "#F8F9FB",
+        philippineYellow: "#ffcb00",
+        stoneColdGray: "#575656",
+        carbonFiber: "#2d2d2d",
+      }
+    },
   },
   plugins: [],
 }
