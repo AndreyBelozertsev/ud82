@@ -1,9 +1,13 @@
-.service-wrap{
+.service-wrap__left{
     grid-template-columns: 2fr 1fr
 }
 
+.service-wrap__right{
+    grid-template-columns: 1fr 2fr
+}
+
 @media (max-width: 1140px) {
-    .service-wrap{
+    .service-wrap__left, .service-wrap__right{
         grid-template-columns: 1fr
     }
 }
