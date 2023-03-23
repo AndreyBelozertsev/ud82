@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 @import './_root.scss';
+@import './_contact.scss';
+@import './_footer.scss';
 @import './_navmenu.scss';
 @import './_index.scss';
+@import './_service.scss';
+@import './_slider.scss';
 
 body{
     font-family: 'Montserrat', sans-serif;

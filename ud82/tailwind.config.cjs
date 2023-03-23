@@ -22,6 +22,8 @@ module.exports = {
         philippineYellow: "#ffcb00",
         stoneColdGray: "#575656",
         carbonFiber: "#2d2d2d",
+        brandBlack: "#080D11",
+        $brandGray: '#737373',
       }
     },
   },

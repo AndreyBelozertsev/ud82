@@ -11,24 +11,31 @@
           <nav class="navbar pt-5 pb-6">
               <div class="container">
                   <div class="navbar__wrap">
-                      <a class="logo" href="#" rel="home">
-                          <img src="./src/images/logo.svg">
-                      </a>
-                      <div class="hamb">
-                          <div class="hamb__field" id="hamb">
-                              <span class="bar"></span>
-                              <span class="bar"></span>
-                              <span class="bar"></span>
+                      <div class="flex items-center">
+                          <a class="logo" href="#" rel="home">
+                              <img src="./src/images/logo.svg">
+                          </a>
+                      </div>
+                      <div class="menu" id="menu">
+                          <ul class="rounded-3xl">
+                              <li><a href="#" class="px-8 py-3 menu_active rounded-3xl">Преимущества</a></li>
+                              <li><a class="px-8 py-3 rounded-3xl" href="#">Услуги</a></li>
+                              <li><a class="px-8 py-3 rounded-3xl" href="#">Работы</a></li>
+                          </ul>
+                          <div class="flex md:hidden">
+                            <a class="py-2 px-6 rounded-3xl text-carbonFiber text-base font-bold bg-philippineYellow" href="tel:+7 978 100-05-48">+7 978 100-05-48</a>
                           </div>
                       </div>
-                      <ul class="menu rounded-3xl" id="menu">
-                          <li class="px-8 py-3"><a href="#" class="menu_active">Главная</a></li>
-                          <li class="px-8 py-3"><a href="#">Главная</a></li>
-                          <li class="px-8 py-3"><a href="#">Главная</a></li>
-                      </ul>
-                      <div class="flex">
+                      <div class="hidden md:flex">
                           <a class="py-3 px-8 rounded-3xl text-carbonFiber text-xl font-bold bg-philippineYellow" href="tel:+7 978 100-05-48">+7 978 100-05-48</a>
                       </div>
+                      <div class="hamb">
+                        <div class="hamb__field" id="hamb">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
                   </div>
               </div>
               <div class="popup" id="popup"></div>
@@ -39,13 +46,14 @@
             <div class="container">
                 <div class="pb-20 pt-24">
                   <div class="pb-16">
-                      <h1 class="text-white text-[80px] font-bold">UNIONDELTA82</h1>
+                    <img src="./src/images/LOGO main.svg">
+                      <!-- <h1 class="text-white text-[100px] font-bold">UNIONDELTA82</h1> -->
                   </div>
                   <div class="pb-16">
-                      <p class="text-white text-2xl">Антигравийные, тонировочные и защитные плёнки,<br>произведённые по передовым технологиям</p>
+                      <p class="text-white text-xl md:text-2xl">Антигравийные, тонировочные и защитные плёнки,<br>произведённые по передовым технологиям</p>
                   </div>
-                  <div class="pb-44">
-                      <button class="py-4 px-8 font-bold text-carbonFiber text-2xl bg-philippineYellow rounded-3xl">Записаться на консультацию</button>
+                  <div class="pb-16 sm:pb-24 md:pb-32 lg:pb-44 flex justify-center md:justify-start">
+                      <button class="py-2 sm:py-4 px-4 sm:px-8 font-bold text-carbonFiber text-xl md:text-2xl bg-philippineYellow hover:bg-transparent hover:text-philippineYellow border-philippineYellow border duration-700 rounded-3xl">Записаться на консультацию</button>
                   </div>
                 </div>
                 <div class="flex justify-end">
@@ -55,13 +63,281 @@
         </section>
         <section class="py-28">
             <div class="container">
-                <h2 class="text-carbonFiber text-5xl uppercase font-extrabold">преимущества</h2>
+                <div class="pb-[72px]">
+                    <h2 class="text-carbonFiber text-3xl lg:text-5xl uppercase font-extrabold">преимущества</h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" style="filter: drop-shadow(0px 0 16px rgba(0, 0, 0, 0.08));">
+                    <div class="bg-white px-2 pt-6 pb-8 rounded-xl">
+                        <div class="flex justify-center pb-3">
+                            <img class="p-3" src="./src/images/advantage-1.svg">
+                        </div>
+                        <div>
+                            <p class="text-base text-carbonFiber text-center">Официальный представитель UnionDelta</p>
+                        </div>
+                    </div>
+                    <div class="bg-white px-2 pt-6 pb-8 rounded-xl">
+                        <div class="flex justify-center pb-3">
+                            <img class="p-3" src="./src/images/advantage-2.svg">
+                        </div>
+                        <div>
+                            <p class="text-base text-carbonFiber text-center">Широкий выбор покрытий</p>
+                        </div>
+                    </div>
+                    <div class="bg-white px-2 pt-6 pb-8 rounded-xl">
+                        <div class="flex justify-center pb-3">
+                            <img class="p-3" src="./src/images/advantage-3.svg">
+                        </div>
+                        <div>
+                            <p class="text-base text-carbonFiber text-center">Гарантия на защитную плёнку до 10 лет</p>
+                        </div>
+                    </div>
+                    <div class="bg-white px-2 pt-6 pb-8 rounded-xl">
+                        <div class="flex justify-center pb-3">
+                            <img class="p-3" src="./src/images/advantage-4.svg">
+                        </div>
+                        <div>
+                            <p class="text-base text-carbonFiber text-center">Заботимся об авто наших клиентов с 2007 года</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </section>
+        <section>
+            <div class="container">
+                <div class="pb-16 md:pb-[88px]">
+                  <h2 class="text-carbonFiber text-3xl lg:text-5xl uppercase font-extrabold">наши услуг</h2>
+                </div>
+                <div>
+                    <div class="pb-12 md:pb-16">
+                        <h3 class="text-xl md:text-3xl lg:text-[40px] font-bold text-carbonFiber">Профессиональные защитные покрытия для авто — DELTAautomotive</h3>
+                    </div>
+                    <div class="pb-10">
+                        <p class="text-lg md:text-2xl">Продукция бренда UnionDelta знаменита не только передовыми технологиями производства, но и гармоничным сочетанием идеального внешнего вида, долговечности и безупречной защиты поверхностей</p>
+                    </div>
+                    <div class="pb-6">
+                        <p class="text-lg md:text-2xl">DELTAautomotive - линейка профессиональных защитных покрытий из полимеров для вашего авто:</p>
+                    </div>
+                    <div class="pb-12 xl:pb-[72px]">
+                        <ul class="text-lg md:text-2xl">
+                            <li class="pb-2">> DELTASKIN — для антигравийной защиты кузова авто и его фар</li>
+                            <li class="pb-2">> DELTAFILM — для тонирования стёкол</li>
+                            <li class="pb-2">> DELTAPLEX — для защиты лобового стекла</li>
+                        </ul>
+                    </div>
+                    <div class="pb-12 xl:pb-0">
+                        <div class="grid gap-6 pb-16 xl:pb-[184px] service-wrap">
+                            <div class="relative order-1 xl:order-none">
+                                <div>
+                                    <img src="./src/images/service-1.png">
+                                </div>
+                                <div class="py-12 px-8 bg-white xl:absolute xl:max-w-xl" style="bottom:-120px;right:-200px;filter: drop-shadow(0px 0 16px rgba(0, 0, 0, 0.08));">
+                                    <div class="pb-10">
+                                        <img src="./src/images/service-add-1.svg">
+                                    </div>
+                                    <div>
+                                        <p class="pb-6">Плёнки серии DELTASKIN предназначены для надёжной антигравийной защиты и стайлинга кузова, оптики и деталей интерьера</p>
+                                        <p>DELTASKIN – полиуретановые и гибридные плёнки, среди которых можно найти покрытия на любой вкус: прозрачные и цветные, глянцевые и матовые, перламутровые и глиттерные, а также карбоновое волокно</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-8 xl:py-12 order-0 xl:order-none">
+                                <p class="text-2xl md:text-[32px] font-bold">Антигравийная защита</p>
+                            </div>
+                        </div>
+                        <div class="grid gap-6 pb-16 xl:pb-[184px] service-wrap">
+                            <div class="py-8 xl:py-12">
+                                <p class="text-2xl md:text-[32px] font-bold">Тонировка</p>
+                            </div>
+                            <div class="relative">
+                                <div>
+                                    <img src="./src/images/service-2.png">
+                                </div>
+                                <div class="py-12 px-8 bg-white xl:absolute xl:max-w-xl" style="bottom:-120px;left:-200px;filter: drop-shadow(0px 0 16px rgba(0, 0, 0, 0.08));">
+                                    <div class="pb-10">
+                                        <img src="./src/images/service-add-2.svg">
+                                    </div>
+                                    <div>
+                                        <p class="pb-6">DELTAfilm - оптически прозрачные плёнки, используемые для тонирования автомобильных стёкол, которые обеспечивают защиту салона от инфракрасного и ультрафиолетового излучения</p>
+                                        <p class="pb-6">В зависимости от типа покрытия, они подразделяются на три категории:</p>
+                                        <ul>
+                                          <li class="pb-2">> High-Performance – металлизированные</li>
+                                          <li class="pb-2">> Non-Reflective – не металлизированные</li>
+                                          <li class="pb-2">> Ceramic – атермальные</li>
+                                      </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid gap-6 pb-16 xl:pb-[184px] service-wrap">
+                          <div class="relative order-1 xl:order-none">
+                              <div>
+                                  <img src="./src/images/service-3.png">
+                              </div>
+                              <div class="py-12 px-8 bg-white xl:absolute xl:max-w-xl" style="bottom:-120px;right:-200px;filter: drop-shadow(0px 0 16px rgba(0, 0, 0, 0.08));">
+                                  <div class="pb-10">
+                                      <img src="./src/images/service-add-3.svg">
+                                  </div>
+                                  <div>
+                                      <p>DELTAplex – серия экстерьерных плёнок, разработанная для защиты лобового стекла от мелких сколов, трещин и царапин, а пассажиров в салоне — от ультрафиолетовых лучей</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="py-8 xl:py-12">
+                              <p class="text-2xl md:text-[32px] font-bold">Защита лобового стекла</p>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pb-[120px]">
+            <div class="container">
+              <div class="bg-cover bg-center bg-no-repeat py-24" style="background-image: url('./src/images/add-services-background.jpg');">
+                  <div class="flex items-center flex-col font-bold text-center text-white">
+                    <div>
+                      <h3 class="text-xl md:text-3xl lg:text-[40px] text-white pb-8">И даже больше</h3>
+                    </div>
+                    <div>
+                        <div>
+                          <button data-block="services" class="show-button font-normal py-3 border-b">Ознакомиться с полным списком услуг</button>
+                        </div>
+                    </div>
 
+                    <div id="" class="hidden">
+                      <div class="text-xl md:text-2xl pb-10">
+                          <p class="pb-4">Химчистка салона</p>
+                          <p class="pb-4">Полировка</p>
+                          <p class="pb-4">Окраска кузова</p>
+                          <p class="pb-4">Шумоизоляция</p>
+                      </div>
+                      <div>
+                          <button class="font-normal py-3 border-b">Свернуть список услуг</button>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+            </div>
+        </section>
+        <section class="pb-[120px]">
+            <div class="container">
+                <div class="swiper pb-[77px]">
+                    <div class="flex flex-col sm:flex-row justify-between items-center pb-8 sm:pb-[72px]">
+                        <div class="pb-8 sm:pb-0">
+                            <h2 class="text-carbonFiber text-3xl lg:text-5xl uppercase font-extrabold">Примеры работ</h2>
+                        </div>
+                        <div class="flex justify-between w-full sm:w-auto">
+                            <div class="swiper-button-prev pr-8"></div>
+                            <div class="swiper-button-next pl-8"></div>
+                        </div>
+                    </div>
+                      <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide bg-white py-6 px-5 rounded-xl" style="filter: drop-shadow(0px 0 16px rgba(0, 0, 0, 0.08));">
+                          <div class="bg-center bg-cover h-64 rounded-xl mb-5" style="background-image: url('./src/images/example-1.jpeg');">
+                          </div>
+                          <div>
+                            <div class="pb-5">
+                              <h3 class="font-bold text-carbonFiber text-xl">Оклейка кузова защитной плёнкой DELTASKIN</h3>
+                            </div>
+                            <div>
+                              <p class="text-stoneColdGray text-lg">DELTASKIN S-TYPE CLEAR PPF TOP TPU – антигравийная прозрачная полиуретановая плёнка с твёрдым лаковым слоем. Сочетание выгодной цены, надёжной защиты и отличного внешнего вида</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide bg-white py-6 px-5 rounded-xl" style="filter: drop-shadow(0px 0 16px rgba(0, 0, 0, 0.08));">
+                          <div class="bg-center bg-cover h-64 rounded-xl mb-5" style="background-image: url('./src/images/example-2.jpeg');">
+                          </div>
+                          <div>
+                            <div class="pb-5">
+                              <h3 class="font-bold text-carbonFiber text-xl">DELTAPLEX для защиты лобового стекла</h3>
+                            </div>
+                            <div>
+                              <p class="text-stoneColdGray text-lg">Плёнка DELTAPLEX 600 SERIES – продвинутая серия для защиты лобового стекла от ежедневного износа. Повышенная прочность к истиранию и ультрагидрофобный эффект</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide bg-white py-6 px-5 rounded-xl" style="filter: drop-shadow(0px 0 16px rgba(0, 0, 0, 0.08));">
+                          <div class="bg-center bg-cover h-64 rounded-xl mb-5" style="background-image: url('./src/images/example-3.jpeg');">
+                          </div>
+                          <div>
+                            <div class="pb-5">
+                              <h3 class="font-bold text-carbonFiber text-xl">Оклейка плёнкой DELTASKIN кузова и оптики</h3>
+                            </div>
+                            <div>
+                              <p class="text-stoneColdGray text-lg">Обклейка оптики DELTASKIN LIGHTS PROTECTION FILM — тонированной плёнкой PHOTOCHROMIC 80%-30%. Для кузова — DELTASKIN UNLIMITED CLEAR PPF TOP TPU, № 1</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide bg-white py-6 px-5 rounded-xl" style="filter: drop-shadow(0px 0 16px rgba(0, 0, 0, 0.08));">
+                          <div class="bg-center bg-cover h-64 rounded-xl mb-5" style="background-image: url('./src/images/example-3.jpeg');">
+                          </div>
+                          <div>
+                            <div class="pb-5">
+                              <h3 class="font-bold text-carbonFiber text-xl">Оклейка плёнкой DELTASKIN кузова и оптики</h3>
+                            </div>
+                            <div>
+                              <p class="text-stoneColdGray text-lg">Обклейка оптики DELTASKIN LIGHTS PROTECTION FILM — тонированной плёнкой PHOTOCHROMIC 80%-30%. Для кузова — DELTASKIN UNLIMITED CLEAR PPF TOP TPU, № 1</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <button class="py-2 sm:py-4 px-4 sm:px-8  font-bold text-carbonFiber text-xl md:text-2xl bg-philippineYellow rounded-3xl">Записаться на консультацию</button>
+                </div>
+            </div>
+        </section>
+        <section class="pb-[120px]">
+          <div class="container">
+            <div class="w-full sm:h-80 md:h-96 lg:h-[460px] xl:h-[600px]">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ptVHUbTqXtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+        </section>
+        <section class="pb-[120px]">
+          <div class="container">
+            <div class="flex flex-col lg:grid gap-6 bg-white contact-wrap">
+              <div class="order-1 lg:order-0">
+                <div id="map" style="height:476px" data-coordinates="45.013678, 34.025138"></div>
+              </div>
+              <div class="py-10 px-4 sm:px-8 lg:pr-4 order-0 lg:order-1">
+                <div class="pb-14">
+                  <img src="./src/images/logo.svg">
+                </div>
+                <div class="text-xl md:text-2xl text-carbonFiber">
+                  <p class="pb-6 contact contact-address">Симферополь, Зелёная улица, 7</p>
+                  <p class="pb-6 contact contact-schedule">9:00–18:00</p>
+                  <p class="pb-6 contact contact-phone"><a href="tel:+7 978 100-05-48"><span class=""></span>+7 978 100-05-48</a></p>
+                  <p class="pb-6 contact contact-mail"><a href="mailto:mail@mail.com">mail@mail.com</a></p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
     </main>
-    
+    <footer class="pb-12">
+      <div class="container">
+        <div class="flex justify-center pb-8">
+          <hr class="w-11/12">
+        </div>
+        <div class="flex flex-col items-center">
+            <div class="py-10">
+              <img src="./src/images/logo.svg">
+            </div>
+            <div class="flex gap-6 pb-12">
+              <a href="#"><img src="./src/images/vk.svg"></a>
+              <a href="#"><img src="./src/images/whatsapp.svg"></a>
+              <a href="#"><img src="./src/images/telegram.svg"></a>
+            </div>
+            <div>
+              <p class="text-xs sm:text-sm md:text-base">© 2023 UNIONDELTA82 Все права защищены</p>
+            </div>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="/main.js"></script>
+    <script src="https://api-maps.yandex.ru/2.0/?load=package.full&amp;lang=ru-RU"></script>
   </body>
 </html>
